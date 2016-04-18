@@ -14,7 +14,9 @@ public partial class DatabaseTableExplorer : System.Web.UI.Page
     {
         SelectedConnectionString = string.Format(CONNECTION_STRING_VALUE, dataSource, initialCatalog);
     }
-    protected void Page_Load(object sender, EventArgs e)
+
+    #region Event Handlers
+		    protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
@@ -36,10 +38,12 @@ public partial class DatabaseTableExplorer : System.Web.UI.Page
             e.ExceptionHandled = true;
         }
     }
+
     protected void ShowTables_Click(object sender, EventArgs e)
     {
         InitSelectedConnectionString(ServerName.Text, DatabaseNames.SelectedValue);
         TableInfoListView.Visible = true;
         DataBind();
     }
+	#endregion
 }

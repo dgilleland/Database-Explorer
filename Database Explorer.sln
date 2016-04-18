@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbExplorer", "DbExplorer\DbExplorer.csproj", "{0BA780D4-EF1D-4A9E-9DD1-18F3F122ADA0}"
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website(23)", "http://localhost:23395", "{49FC9EB9-BE18-4CF0-82F4-19474272AB46}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
@@ -27,6 +25,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website(23)", "http://local
 		SlnRelativePath = "Website\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbExplorer", "DbExplorer\DbExplorer.csproj", "{0BA780D4-EF1D-4A9E-9DD1-18F3F122ADA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
